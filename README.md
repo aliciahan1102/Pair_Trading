@@ -4,6 +4,20 @@
 
 **The project aims to demonstrate the effectiveness of _clustering-driven pair trading_ using three different modles with varying price momentum indicators**
 
+
+## Contents
+
+[Data Sources](https://github.com/aliciahan1102/Pair_Trading#data-sources)
+[Frame Work](https://github.com/aliciahan1102/Pair_Trading#framework)
+[Code Explanation](https://github.com/aliciahan1102/Pair_Trading#code-explanation)
+[Results](https://github.com/aliciahan1102/Pair_Trading#backtesting-results)
+[Conclustion](https://github.com/aliciahan1102/Pair_Trading#conclusion)
+[Future Research Direction](https://github.com/aliciahan1102/Pair_Trading#future-research-direction)
+[Reference](https://github.com/aliciahan1102/Pair_Trading#references)
+
+
+
+
 ## Data Sources
 Closing price of all stocks existing in KOSPI/KOSDAQ market on Octover 1,2021.
 * KOSPI (Max 938 stocks), KOSDAQ (Max 1517 stocks)
@@ -15,19 +29,19 @@ Closing price of all stocks existing in KOSPI/KOSDAQ market on Octover 1,2021.
 
 ## Code Explanation 
 
-### price momentum 
+### * price momentum 
 
-* i-th week price momentum at the end of week t-1 is defined as (r_j denotes the log return in week j)
+    - i-th week price momentum at the end of week t-1 is defined as (r_j denotes the log return in week j)
 
 ![Price Momentum](./img/momentum.png)
 
 
 
-### Data Pre-processing 
+### * Data Pre-processing 
 
 Use 'standard scaler', 'Principal components' that explains at least 99% of the total variation
 
-### Clustering
+### * Clustering
 
 #### 1. K-means Clustering 
 * Outlier
@@ -38,7 +52,7 @@ Use 'standard scaler', 'Principal components' that explains at least 99% of the 
 #### 3. Agglomerative Clustering 
 
 
-### Portfolio Formation 
+### * Portfolio Formation 
 1. In each cluter, pair two stocks that has highest mom and lowest mom
 2. If there is only one stock in cluster or the last stock in cluster has odd number-> remove
 3. let 's' be standard deviation of pairs momentum differences
@@ -46,17 +60,17 @@ Use 'standard scaler', 'Principal components' that explains at least 99% of the 
 
 ## Backtesting Results
 
-### Clustering Characteristics
+### 1. Clustering Characteristics
 
 ![Clustering Characteristics](./img/clustering_characteristics.png)
 
-### Portfolio performance : Cumulative Log-returns
+### 2. Portfolio performance : Cumulative Log-returns
 
 ![Cumulative Log-returns](./img/log-returns.png)
 
 Clustering-driven pair trading strategies show stable growth of cumulative log-returns without any large loss(drops) due to the market crashes
 
-### Portfolio performance : Risk Measures
+### 3. Portfolio performance : Risk Measures
 
 ![Risk Measures](./img/risk_measures.png)
 
@@ -67,7 +81,7 @@ Clustering-driven pair trading PF is superior in all risk measures compared with
 > Usefulness of CLUSTERING-DRIVEN Pair Trading
 
 * Since pair trading is market-neutral trading strategy, it does not fall significantly even in the crisis and shows a different return movement from the market
-*S uperior performance not only in terms of risk management indicators but also in terms of returns
+* Superior performance not only in terms of risk management indicators but also in terms of returns
 
 ## Future Research Direction
 * Consisting portfolio with other financial assets such as ETF, commodity, etc., or more
