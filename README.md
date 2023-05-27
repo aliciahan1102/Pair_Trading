@@ -7,13 +7,13 @@
 
 ## Contents
 
-[Data Sources](https://github.com/aliciahan1102/Pair_Trading#data-sources)
-[Frame Work](https://github.com/aliciahan1102/Pair_Trading#framework)
-[Code Explanation](https://github.com/aliciahan1102/Pair_Trading#code-explanation)
-[Results](https://github.com/aliciahan1102/Pair_Trading#backtesting-results)
-[Conclustion](https://github.com/aliciahan1102/Pair_Trading#conclusion)
-[Future Research Direction](https://github.com/aliciahan1102/Pair_Trading#future-research-direction)
-[Reference](https://github.com/aliciahan1102/Pair_Trading#references)
+- [Data Sources](https://github.com/aliciahan1102/Pair_Trading#data-sources)
+- [Frame Work](https://github.com/aliciahan1102/Pair_Trading#framework)
+- [Code Explanation](https://github.com/aliciahan1102/Pair_Trading#code-explanation)
+- [Results](https://github.com/aliciahan1102/Pair_Trading#backtesting-results)
+- [Conclustion](https://github.com/aliciahan1102/Pair_Trading#conclusion)
+- [Future Research Direction](https://github.com/aliciahan1102/Pair_Trading#future-research-direction)
+- [Reference](https://github.com/aliciahan1102/Pair_Trading#references)
 
 
 
@@ -29,7 +29,7 @@ Closing price of all stocks existing in KOSPI/KOSDAQ market on Octover 1,2021.
 
 ## Code Explanation 
 
-### * price momentum 
+### 1. price momentum 
 
     - i-th week price momentum at the end of week t-1 is defined as (r_j denotes the log return in week j)
 
@@ -37,11 +37,11 @@ Closing price of all stocks existing in KOSPI/KOSDAQ market on Octover 1,2021.
 
 
 
-### * Data Pre-processing 
+### 2. Data Pre-processing 
 
 Use 'standard scaler', 'Principal components' that explains at least 99% of the total variation
 
-### * Clustering
+### 3. Clustering
 
 #### 1. K-means Clustering 
 * Outlier
