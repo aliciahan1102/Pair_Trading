@@ -31,10 +31,9 @@ Closing price of all stocks existing in KOSPI/KOSDAQ market on Octover 1,2021.
 
 ### 1. price momentum 
 
-    - i-th week price momentum at the end of week t-1 is defined as (r_j denotes the log return in week j)
+- i-th week price momentum at the end of week t-1 is defined as (r_j denotes the log return in week j)
 
 ![Price Momentum](./img/momentum.png)
-
 
 
 ### 2. Data Pre-processing 
@@ -43,16 +42,16 @@ Use 'standard scaler', 'Principal components' that explains at least 99% of the 
 
 ### 3. Clustering
 
-#### 1. K-means Clustering 
++ 1. K-means Clustering 
 * Outlier
     -  Sort the distances to the nearest neighbor, and choose the distance at a percentile as the threshold
     -  Any stock whose distance to its centroid is greater than threshold is regarded as outlier
 
-#### 2. DBSCAN
-#### 3. Agglomerative Clustering 
++ 2. DBSCAN
++ 3. Agglomerative Clustering 
 
 
-### * Portfolio Formation 
+### 4. Portfolio Formation 
 1. In each cluter, pair two stocks that has highest mom and lowest mom
 2. If there is only one stock in cluster or the last stock in cluster has odd number-> remove
 3. let 's' be standard deviation of pairs momentum differences
