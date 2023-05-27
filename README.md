@@ -42,13 +42,13 @@ Use 'standard scaler', 'Principal components' that explains at least 99% of the 
 
 ### 3. Clustering
 
-+ 1. K-means Clustering 
-* Outlier
-    -  Sort the distances to the nearest neighbor, and choose the distance at a percentile as the threshold
-    -  Any stock whose distance to its centroid is greater than threshold is regarded as outlier
+1. K-means Clustering 
+    + Outlier
+        -  Sort the distances to the nearest neighbor, and choose the distance at a percentile as the threshold
+        -  Any stock whose distance to its centroid is greater than threshold is regarded as outlier
 
-+ 2. DBSCAN
-+ 3. Agglomerative Clustering 
+2. DBSCAN
+3. Agglomerative Clustering 
 
 
 ### 4. Portfolio Formation 
