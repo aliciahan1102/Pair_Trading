@@ -1,6 +1,8 @@
 # Pair_Trading with Clsutering-Based Approach
 
->Objective : Utilize clustering techniques to identify pairs of correlated assets for pair trading in the Korean Financial Market. The project aims to demonstrate the effectiveness of clustering-driven pair trading using three different modles with varying price momentum indicators
+> **Objective** : Utilize clustering techniques to identify pairs of correlated assets for pair trading in the Korean Financial Market. 
+
+** The project aims to demonstrate the effectiveness of _clustering-driven pair trading_ using three different modles with varying price momentum indicators **
 
 ## Data Sources
 Closing price of all stocks existing in KOSPI/KOSDAQ market on Octover 1,2021.
@@ -29,8 +31,8 @@ Use 'standard scaler', 'Principal components' that explains at least 99% of the 
 
 #### 1. K-means Clustering 
 * Outlier
-    * Sort the distances to the nearest neighbor, and choose the distance at a percentile as the threshold
-    * Any stock whose distance to its centroid is greater than threshold is regarded as outlier
+    - * Sort the distances to the nearest neighbor, and choose the distance at a percentile as the threshold
+    - * Any stock whose distance to its centroid is greater than threshold is regarded as outlier
 
 #### 2. DBSCAN
 #### 3. Agglomerative Clustering 
