@@ -29,8 +29,8 @@ Use 'standard scaler', 'Principal components' that explains at least 99% of the 
 
 #### 1. K-means Clustering 
 * Outlier
-    *Sort the distances to the nearest neighbor, and choose the distance at a percentile as the threshold
-    *Any stock whose distance to its centroid is greater than threshold is regarded as outlier
+    * Sort the distances to the nearest neighbor, and choose the distance at a percentile as the threshold
+    * Any stock whose distance to its centroid is greater than threshold is regarded as outlier
 
 #### 2. DBSCAN
 #### 3. Agglomerative Clustering 
@@ -51,21 +51,21 @@ Use 'standard scaler', 'Principal components' that explains at least 99% of the 
 ### Portfolio performance : Cumulative Log-returns
 
 ![Cumulative Log-returns](./img/log-returns.png)
-Clustering-driven pair trading strategies show stable growth of cumulative log-returns without any large loss(drops) due to the market crashes
 
-Benchmakrs (KOSPI, Equally Weighted Portfolio) show lower return performance with many sudden drops
+Clustering-driven pair trading strategies show stable growth of cumulative log-returns without any large loss(drops) due to the market crashes
 
 ### Portfolio performance : Risk Measures
 
 ![Risk Measures](./img/risk_measures.png)
+
 Clustering-driven pair trading PF is superior in all risk measures compared with benchmarks
 
 
 ## Conclusion
 > Usefulness of CLUSTERING-DRIVEN Pair Trading
 
-*Since pair trading is market-neutral trading strategy, it does not fall significantly even in the crisis and shows a different return movement from the market
-*Superior performance not only in terms of risk management indicators but also in terms of returns
+* Since pair trading is market-neutral trading strategy, it does not fall significantly even in the crisis and shows a different return movement from the market
+*S uperior performance not only in terms of risk management indicators but also in terms of returns
 
 ## Future Research Direction
 * Consisting portfolio with other financial assets such as ETF, commodity, etc., or more
